@@ -250,6 +250,23 @@ class GitBuildPipeline:
             else:
                 self.logger.info("[mappable_criteria] skip {}", file.relpath)
 
+        # ----------- copy usc -----------
+        usc_outdir = self.workdir / "usc"
+        usc_outdir.mkdir(exist_ok=True, parents=True)
+
+        workfiles = [
+            self.assert_valid_file(file)
+            for file in files
+            if file.relpath.startswith("data/usc") and file.relpath.endswith(".ttl")
+        ]
+        self.ensure_no_extra_files(
+            {file.path.name for file in workfiles},
+            usc_outdir,
+        )
+        for file in workfiles:
+            shutil.copy(file.path, usc_outdir / file.path.name)
+            self.logger.info("[usc] copy {}", file.relpath)
+
     def step3_prepare_output(self, files: list[InputFile]):
         ttl_files = list(self.workdir.glob("**/*.ttl"))
 
