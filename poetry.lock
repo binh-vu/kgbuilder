@@ -309,6 +309,45 @@ genshi = ["genshi"]
 lxml = ["lxml"]
 
 [[package]]
+name = "hugedict"
+version = "2.12.10"
+description = "A dictionary-like object that is friendly with multiprocessing and uses key-value databases (e.g., RocksDB) as the underlying storage."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "hugedict-2.12.10-cp310-cp310-macosx_10_14_x86_64.macosx_11_0_arm64.macosx_10_14_universal2.whl", hash = "sha256:4eeb8c744c7f83d979e51c297fe39d7aad89fd1f4bc6fb63a45a5da13a1559eb"},
+    {file = "hugedict-2.12.10-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:15689e366f259002fff20247a3a02fd4eec8dc76ade6e37ea72ff0a05ee51aec"},
+    {file = "hugedict-2.12.10-cp310-cp310-manylinux_2_35_x86_64.whl", hash = "sha256:e93495294ea4585b35ddda02933f31c02da9bb0e3c2e2e9784aa8faf053df5d8"},
+    {file = "hugedict-2.12.10-cp311-cp311-macosx_10_14_x86_64.macosx_11_0_arm64.macosx_10_14_universal2.whl", hash = "sha256:849ff95560e73e589c8124594c289bfcc24b1d99f6e7a53d24ab6bb2c4db5324"},
+    {file = "hugedict-2.12.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7ab50a34c770a5b8ef9622c7aba15ecf133fc9ee8aa665fdba992b71825c03da"},
+    {file = "hugedict-2.12.10-cp311-cp311-manylinux_2_35_x86_64.whl", hash = "sha256:0388e579250ff6ab31ed3e115c3ff73f922b751ade7ad9021c09ad6e4a84b80c"},
+    {file = "hugedict-2.12.10-cp312-cp312-macosx_10_14_x86_64.macosx_11_0_arm64.macosx_10_14_universal2.whl", hash = "sha256:e024da3c3bb8509e712a4fc84db7cf27ceb435f75bc599e4e5a9cd7c460b3296"},
+    {file = "hugedict-2.12.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b0320fff41c3978484e728a3a1e51634d224d0323e6a28f81f0c708d6abc14c4"},
+    {file = "hugedict-2.12.10-cp312-cp312-manylinux_2_35_x86_64.whl", hash = "sha256:d850f938725f4a8674a71b875ec88303ba206c8b6006e2b5eee41b2eb435cc22"},
+    {file = "hugedict-2.12.10-cp38-cp38-macosx_10_14_x86_64.macosx_11_0_arm64.macosx_10_14_universal2.whl", hash = "sha256:74399ec180f3b0b8b2d1a227e6be204b4547043d87ed7bb059dd34c8999a3ee4"},
+    {file = "hugedict-2.12.10-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9f92506d4fff38e08c3e976243211393a0b90b4d9df83e81a27dded0a27ebfa3"},
+    {file = "hugedict-2.12.10-cp38-cp38-manylinux_2_35_x86_64.whl", hash = "sha256:9a28a3b9f6609dfcfe0ba450513fc86fd56bea576ff715a0fcd01783c9ff536e"},
+    {file = "hugedict-2.12.10-cp38-none-win_amd64.whl", hash = "sha256:4de62cffce90b1177fd9b36c9a6d5299f9bf2ca5529c90f7e4a91b9cfefbcb78"},
+    {file = "hugedict-2.12.10-cp39-cp39-macosx_10_14_x86_64.macosx_11_0_arm64.macosx_10_14_universal2.whl", hash = "sha256:1294a5ed7859eb6392c7fac6c5fa6bfc6b9ff98cbfa0de232c9204f175f75493"},
+    {file = "hugedict-2.12.10-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8372ea95953e3e7a5bf0e8a32b7ba093fe56df8a00d8c926721717d61535541f"},
+    {file = "hugedict-2.12.10-cp39-cp39-manylinux_2_35_x86_64.whl", hash = "sha256:cc7d7077524efa702352f91822f2b69e723233f6eefd711be903c820356646ce"},
+    {file = "hugedict-2.12.10-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:457a053fd31e22faed2dffc8d29d487c5c338bd34f0a121cad06d9423399ff9d"},
+    {file = "hugedict-2.12.10-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:aff1d76cff7126c43aa686d9032cc6b698895ee9cc1e99de735cd8bd9e4bb452"},
+    {file = "hugedict-2.12.10-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4f948f6af3c5e45c2a9c6d660a4b42c0d391d207faff3f27ce1b47be85f5cf14"},
+    {file = "hugedict-2.12.10.tar.gz", hash = "sha256:34b19693a6de95ac8988f2b8569bb4230e0d96b628aef48025ec703c8f016a1a"},
+]
+
+[package.dependencies]
+loguru = ">=0.7.0,<0.8.0"
+orjson = ">=3.9.0,<4.0.0"
+timer4 = ">=1.1.0,<2.0.0"
+tqdm = ">=4.64.0,<5.0.0"
+zstandard = ">=0.22.0,<0.23.0"
+
+[package.extras]
+dev = ["black (>=22.10.0,<23.0.0)", "pytest (>=7.1.3,<8.0.0)", "pytest-cov (>=4.0.0,<5.0.0)"]
+
+[[package]]
 name = "idna"
 version = "3.7"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -1063,6 +1102,17 @@ files = [
 ]
 
 [[package]]
+name = "timer4"
+version = "1.1.0"
+description = "Timing Python code made easy"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "timer4-1.1.0-py3-none-any.whl", hash = "sha256:23d635ab721c04cc36b0a38333993bf057ebcb8067dd1b02c53d1c9b842f8ec8"},
+    {file = "timer4-1.1.0.tar.gz", hash = "sha256:4a93c16a3fec06ac9a3afce92a28ceb7dff514829e1ca6d8b4b3f8287b4b98ba"},
+]
+
+[[package]]
 name = "tqdm"
 version = "4.66.4"
 description = "Fast, Extensible Progress Meter"
@@ -1340,4 +1390,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "ca01ece5868cf95a1254f4f51c3293ec01775c8d5ce1783d60f5107745452941"
+content-hash = "79c1e6b50be2ef4379ac16be5002eb9a513288515e6938b5a122ad4632ae4e62"

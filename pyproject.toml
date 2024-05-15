@@ -16,6 +16,7 @@ validators = "^0.28.1"
 python-slugify = "^8.0.4"
 tqdm = "^4.66.4"
 loguru = "^0.7.2"
+hugedict = "^2.12.10"
 
 [tool.poetry.group.dev.dependencies]
 pyshacl = "^0.25.0"
