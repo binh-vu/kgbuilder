@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "usc-isi-kgbuilder"
+version = "1.0.0"
+description = "Building Knowledge Graph from Github repository"
+authors = ["Binh Vu <bvu687@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "kgbuilder" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+drepr-v2 = "^1.3.6"
+requests = "^2.31.0"
+jsonschema = "^4.22.0"
+validators = "^0.28.1"
+python-slugify = "^8.0.4"
+tqdm = "^4.66.4"
+loguru = "^0.7.2"
+
+[tool.poetry.group.dev.dependencies]
+pyshacl = "^0.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
